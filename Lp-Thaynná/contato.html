@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt_Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+    <title>Thaynná O. Gomes</title>
+    
+</head>
+
+<body>
+
+
+    <header class="header" id="header">
+
+        <div class="h-1">
+            <div class="logo">
+                <img src="./img/th.png" alt="">
+            </div>
+    
+            <nav class="nav">
+                <div>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="/index.html">Portfólio</a></li>
+                        <li class="nav-item"><a href="/a-thaynna.html">Quem sou</a></li>
+                        <li class="nav-item"><a href="/contato.html">Contato</a></li>
+    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="btn-bk-bot">
+            <a href="#footer">
+                <img src="./img/sinal-de-seta-para-baixo-para-navegar.png" alt="">
+            </a>
+        </div>
+
+
+        
+    </header>
+
+
+    <main class="main contato">
+        
+        <section class="f-section contato">
+            <img src="/img/Contato.png" alt="">
+            <form class="form"  method="POST" action="https://formsubmit.co/rafapb14@gmail.com">
+
+                <input type="hidden" name="_next" value="https://thaynnaoliveira.netlify.app">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="d-input-form">
+                    <label for="">Nome<span>*</span></label>
+                    <input class="ipt-form" type="text" name="name" id="">
+                </div>
+
+                <div class="d-input-form">
+                    <label for="">Telefone<span>*</span></label>
+                    <input type="text" class=" ipt-form form-control" name="phone" onkeypress="$(this).mask('(00) 0 0000-0009')">
+                </div>
+
+                <div class="d-input-form">
+                    <label for="">E-mail<span>*</span></label>
+                    <input class="ipt-form" type="email" name="email" id="">
+                </div>
+
+                <div class="d-input-form">
+                    <label for="">Fale mais sobre o motivo do seu contato<span>*</span></label>
+                    <textarea class="ipt-form" id="textarea" name="message"></textarea>
+                </div>
+                <button class="enviar" type="submit" >Enviar</button>
+                
+            </form>
+        </section>
+
+        <div class="btn-bk-top">
+            <a href="#header">voltar para o topo</a>
+        </div>
+
+    </main>
+
+
+    <footer class="footer" id="footer">
+        <div class="logo-footer">
+            <img src="./img/th.png" alt="">
+        </div>
+
+        <div class="rs-icons">
+            <a href="https://www.instagram.com/thay.ai/" target="_blank">
+                <i class='bx bxl-instagram'></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/thaynná-oliveira-95a813206/" target="_blank">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+
+            <a href="https://wa.me/552297833527" target="_blank">
+                <i class='bx bxl-whatsapp' id="re"></i>
+            </a>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
